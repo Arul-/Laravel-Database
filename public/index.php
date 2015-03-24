@@ -34,11 +34,13 @@ require __DIR__.'/../bootstrap/autoload.php';
 |
 */
 
-/*
+
 use Luracast\Restler\Restler;
 $r = new Restler();
+$r->setSupportedFormats('JsonFormat', 'XmlFormat');
+$r->addApiClass('Pet');
 $r->addApiClass('Explorer');
-*/
+
 
 /*
 |--------------------------------------------------------------------------
@@ -50,4 +52,4 @@ $r->addApiClass('Explorer');
 |
 */
 
-// $r->handle();
+$r->handle();
